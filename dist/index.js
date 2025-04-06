@@ -24,5 +24,8 @@ app.use('/api/auth', authRoutes_1.default);
 app.use('/api/interview', interviewRoutes_1.default);
 app.use('/api/saved', savedRoutes_1.default);
 app.use('/api/analytics', analyticsRoutes_1.default);
+app.get("/", (req, res) => {
+    res.json("hello from backend!!!!!!!!!");
+});
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));

@@ -48,7 +48,7 @@ exports.AIService = {
             }, {
                 headers: { 'Content-Type': 'application/json' }
             });
-            console.log("Gemini response (evaluation):", response.data);
+            // console.log("Gemini response (evaluation):", response.data);
             // Modified extraction for evaluation feedback:
             const feedback = (_h = (_g = (_f = (_e = (_d = (_c = (_b = response.data) === null || _b === void 0 ? void 0 : _b.candidates) === null || _c === void 0 ? void 0 : _c[0]) === null || _d === void 0 ? void 0 : _d.content) === null || _e === void 0 ? void 0 : _e.parts) === null || _f === void 0 ? void 0 : _f[0]) === null || _g === void 0 ? void 0 : _g.text) === null || _h === void 0 ? void 0 : _h.trim();
             if (!feedback)
