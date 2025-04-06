@@ -14,7 +14,7 @@ const savedRoutes_1 = __importDefault(require("./routes/savedRoutes"));
 const analyticsRoutes_1 = __importDefault(require("./routes/analyticsRoutes"));
 dotenv_1.default.config();
 const app = (0, express_1.default)();
-app.use((0, cors_1.default)({ origin: 'http://localhost:5173' }));
+app.use((0, cors_1.default)({ origin: 'https://prep-ai-fe.vercel.app' }));
 app.use(express_1.default.json());
 mongoose_1.default
     .connect(process.env.MONGO_URI)
